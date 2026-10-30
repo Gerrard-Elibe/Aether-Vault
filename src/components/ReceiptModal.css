@@ -1,0 +1,37 @@
+.receipt-modal-card {
+  background-color: #0b0f19;
+  border: 1px solid #1e293b;
+  padding: 20px;
+  border-radius: 24px;
+  max-width: 448px;
+  width: 92%;
+  margin: auto;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+}
+
+@media(min-width: 640px) {
+  .receipt-modal-card {
+    padding: 24px;
+  }
+}
+
+.receipt-row-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: #94a3b8;
+  margin-bottom: 12px;
+}
+
+.hash-receipt-display {
+  font-size: 10px;
+  color: #94a3b8;
+  word-break: break-all;
+  overflow-wrap: break-word;
+  background-color: #020617;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+  margin-top: 4px;
+}
