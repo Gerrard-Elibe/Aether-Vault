@@ -14,7 +14,7 @@ export default function App() {
 
   const [currentRoute, setCurrentRoute] = useState('overview');
   const [hideBalances, setHideBalances] = useState(false);
-  const [balanceUSD, setBalanceUSD] = useState(0.00);
+  const [balanceUSD, setBalanceUSD] = useState(100000.00); // Initial balance set to $100k USD
 
   const [gatewayDetails] = useState({
     btcAddress: 'bc1qAetherVault88997766554433221100xx9922',
@@ -123,6 +123,7 @@ export default function App() {
               <CashOutPage
                 balanceUSD={balanceUSD}
                 onConfirmWithdraw={handleConfirmWithdraw}
+                setCurrentRoute={setCurrentRoute}
               />
             )}
 
